@@ -7,7 +7,7 @@ standings <- read.csv("data/standings.csv")
 standings_head <- standings %>% head
 
 ggplot(data = standings_head, aes(x = Tm, y = W)) +
-  geom_col() + 
+  geom_col(fill="red") + 
   labs(
     x = "Teams",
     y = "Wins",
